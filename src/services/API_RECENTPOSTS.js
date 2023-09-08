@@ -1,7 +1,7 @@
 import axios from "axios";
 
 export default axios.create({
-    baseURL: 'http://localhost:8000/api/recentposts/',
+    baseURL: "https://blog-backend-iota.vercel.app/api/recentposts/",
 
     headers: {
         'Accept': 'application/json',

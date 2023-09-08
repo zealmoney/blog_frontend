@@ -2,7 +2,7 @@ import axios from "axios";
 
 export default axios.create(
     {
-        baseURL: 'http://localhost:8000/api/comments/',
+        baseURL: "https://blog-backend-iota.vercel.app/api/comments/",
 
         headers: {
             'Accept': 'application/json',
