@@ -29,8 +29,10 @@ const Headers = () => {
                             <Link className="item" to="/">Home</Link>
                             {
                                 categories.map((category) => {
+                                    const str = category.name
+                                    const str2 = str.charAt(0).toUpperCase() + str.slice(1)
                                     return(
-                                        <Link key={category.slug} className="item" to={category.slug}>{category.name}</Link>
+                                        <Link key={category.slug} className="item" to={category.slug}>{str2}</Link>
                                     )
                                 })
                             }

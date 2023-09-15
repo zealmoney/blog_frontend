@@ -28,7 +28,7 @@ const RecentPosts = () => {
                             const result = post.excerpt
                             return(
                                 <div role="listitem" className="item" key={post.title}>
-                                    <img src={post.featuredImage} className="ui avatar image" />
+                                    <img src={"https://res.cloudinary.com/dfsyvrhom/" + post.featuredImage} className="ui avatar image" />
                                     <div className="content">
                                         <div className="header">
                                             Posted: {moment(post.dateadded).format('MMMM Do YYYY')}

@@ -32,7 +32,7 @@ const Fashion = () => {
                         return(
                             <div key={post.id} className="ui fluid card">
                                 <div className="image">
-                                    <img src={post.featuredImage} />
+                                    <img src={"https://res.cloudinary.com/dfsyvrhom/" + post.featuredImage} />
                                 </div>
                                 <div className="content">
                                     <div className="header">
@@ -57,7 +57,7 @@ const Fashion = () => {
 
                 <div className="six wide column">
                     <RelatedPosts 
-                        category = "Fashion"
+                        category = "fashion"
                     />
                     <br/>
                     <Categories />

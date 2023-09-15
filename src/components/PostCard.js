@@ -26,7 +26,7 @@ const PostCard = () => {
                         return(                         
                             <div key={post.id} className="ui fluid card">
                                 <div className="image">
-                                    <img src={post.featuredImage} alt={post.title} />
+                                    <img src={"https://res.cloudinary.com/dfsyvrhom/" + post.featuredImage} alt={post.title} />
                                 </div>
                                 <div className="content">
                                     <div className="header">

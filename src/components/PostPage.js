@@ -70,14 +70,14 @@ const PostPage = () => {
         <div>
             <Headers />
             <div className="ui grid">
-                <div className="ten wide column">
+                <div className="ten wide column" stackable>
                     {
                         posts.map((post) => {
                             if(post.id == params.post_id){
                                 return(
                                     <div key={post.id} className="ui fluid card">
                                             <div className="image">
-                                                <img src={post.featuredImage} />
+                                                <img src={"https://res.cloudinary.com/dfsyvrhom/" + post.featuredImage} />
                                             </div>
                                             <div className="content">
                                                 <div className="meta">

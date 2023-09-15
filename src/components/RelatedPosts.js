@@ -33,7 +33,7 @@ const RelatedPosts = (props) => {
                                     const result = post.excerpt
                                     return(
                                         <div className="item">
-                                            <img className=" ui avatar image" src={post.featuredImage} />
+                                            <img className=" ui avatar image" src={"https://res.cloudinary.com/dfsyvrhom/" + post.featuredImage} />
                                             <div className="content">
                                                 <div className="header">
                                                     Posted: {moment(post.dateadded).format('MMMM Do YYYY')}
