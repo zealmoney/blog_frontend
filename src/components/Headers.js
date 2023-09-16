@@ -21,7 +21,7 @@ const Headers = () => {
         <div>
             <div className="ui dividing header">
                 <div className="ui left floated header">
-                    <Link to="/">Blog App</Link>                    
+                    <Link to="/">BlogApp</Link>                    
                 </div>
                 <div className="ui right aligned header">
                     <div className="ui right aligned header">
