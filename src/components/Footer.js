@@ -6,7 +6,7 @@ const Footer = () => {
             <div className='ui dividing header'>
 
             </div>
-            <div className='ui three column grid'>
+            <div className='ui stackable three column grid'>
                 <div className='column'>
                     <h3>News App Incorporated</h3>
                     <p className='meta'>

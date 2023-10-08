@@ -29,7 +29,7 @@ const PostCard = () => {
                                     <img src={"https://res.cloudinary.com/dfsyvrhom/" + post.featuredImage} alt={post.title} />
                                 </div>
                                 <div className="content">
-                                    <div className="header">
+                                    <div className="header" style={{fontFamily: 'dharma-gothic-e', fontSize: '25px'}}>
                                         <Link to={post.category + '/' + post.id + '/' + post.title }>{post.title}</Link>
                                         
                                     </div>

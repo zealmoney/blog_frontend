@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import 'semantic-ui-css/semantic.min.css';
 import API_CATEGORIES from "../services/API_CATEGORIES";
 import { Link } from "react-router-dom";
+import '../AGRESSIVE.otf'
 
 const Headers = () => {
     const [categories, setCategories]  = useState([])
@@ -20,12 +21,12 @@ const Headers = () => {
     return(
         <div>
             <div className="ui dividing header">
-                <div className="ui left floated header">
+                <div className="ui left floated header" style={{fontFamily: 'AGRESSIVE', fontSize: '25px'}}>
                     <Link to="/">BlogApp</Link>                    
                 </div>
-                <div className="ui right aligned header">
+                
                     <div className="ui right aligned header">
-                        <ul className="ui horizontal list">
+                        <ul className="ui horizontal list" style={{fontFamily: 'Poppins'}}>
                             <Link className="item" to="/">Home</Link>
                             {
                                 categories.map((category) => {
@@ -39,7 +40,6 @@ const Headers = () => {
                         </ul>
 
                     </div>
-                </div>
             </div>
             <br/>
         </div>
